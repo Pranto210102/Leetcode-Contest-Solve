@@ -2,7 +2,7 @@
 using namespace std;
 void minimumDifference(vector<int>& nums, int k) {
         int n=nums.size();
-        set<int>fasiable;
+        set<int>fasiable;        // only log(n) fasiable value .. thus time complexity O(nlog(n))
         int ans=INT_MAX;
         for(int i=n-1;i>=0;i--){                  // 1 2 4 5      k=3
             set<int>new_fasiable;
